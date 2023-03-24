@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Cancer database</title>
+
+    <style>
+        /* Modify the background color */
+
+        .navbar-custom {
+            background-color: #292b2f;
+        }
+        /* Modify brand and text color */
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">CDB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Actions
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="signup.html">Sign Up</a>
+            <a class="dropdown-item" href="login.html">LogIn</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="upload.html">Upload your data</a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <form action="result.php" method="post" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="id" placeholder="Enter Pubmed_ID/Keywords" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Register">Search</button>
+      </form> -->
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="resume">
+      <div class="left">
+        <div class="img_holder">
+          <img src="/Applications/XAMPP/xamppfiles/htdocs/Bio_DB/1.png" alt="picture">
+        </div>
+        <div class="contact_wrap pb">
+          <div class="title">
+            Contact
+          </div>
+          <div class="contact">
+            <ul>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+                  <div class="text">+91-1111111111</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                  <div class="text">cancerdb_2022@gmail.com</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div>
+                  <div class="text">www.cdb.com</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                  <div class="text">VIT, Vellore, India</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills_wrap pb">
+          <div class="title">
+            Types
+          </div>
+          <div class="skills">
+            <ul>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                  <div class="text"> 
+                      <a href="carcinoma.html">Carcinoma</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                  <div class="text">
+                    <a href="leukimia.html">Leukimia</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                  <div class="text">
+                    <a href="lymphoma.html">Lymphoma</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                  <div class="text">
+                    <a href="sarcoma.html">Sarcoma</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hobbies_wrap pb">
+          <div class="title">
+            Contents
+          </div>
+          <div class="hobbies">
+            <ul>
+              <!-- <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Type</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Pubmed_ID</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Name</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Description</div>
+                </div>
+              </li> -->
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Therapy</div>
+                </div>
+              </li>
+              <li>
+                <div class="li_wrap">
+                  <div class="icon"></div>
+                  <div class="text">Imaging</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="header">
+          <div class="name_role">
+            <div class="name">
+              Cancer Data Bank
+            </div>
+            <div class="role">
+              CDB
+            </div>
+          </div>
+          <div class="about">
+            This data base contains information on different types of cancer.
+            <div class="social">
+              <a href="www.facebook.com" target="_blank"><span class="fa fa-facebook-f"></span></a>
+              <a href="" target="_blank"><span class="fa fa-instagram"></span></a>
+              <a><span class="fa fa-whatsapp"></span></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="right_inner">
+
+
+          <div class="education">
+            <div class="title">
+              Our Services
+            </div>
+            <div class="education_wrap">
+              <ul>
+                <li>
+                  <div class="li_wrap">
+                    <div class="date">
+                      <a href="disease.html">Disease</a>
+                    </div>
+                    <div class="info">
+                      <p class="info_title">
+                        Search Diseases
+                      </p>
+                      <p class="info_com">
+                        Carcinomas, Leukemia, Lymphoma, Sarcomas
+                      </p>
+                      <p class="info_cont">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="li_wrap">
+                    <div class="date">
+                      <a href="therapy.html">Therapy</a>
+                    </div>
+                    <div class="info">
+                      <p class="info_title">
+                        Search Therapy
+                      </p>
+                      <p class="info_com">
+                        Chemotherapy, Radiation Therapy, Bone Marrow Transplant, Immunotherapy
+                      </p>
+                      <p class="info_cont">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="li_wrap">
+                    <div class="date">
+                      <a href="imaging.html">Imaging</a>
+                    </div>
+                    <div class="info">
+                      <p class="info_title">
+                        Search Imaging
+                      </p>
+                      <p class="info_com">
+                        Copper Plating, Silver Plating, Gold Plating
+                      </p>
+                      <p class="info_cont">
+                        
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="exp">
+            <div class="title">
+              Experience
+            </div>
+            <div class="exp_wrap">
+              <ul>
+                <li>
+                  <div class="li_wrap">
+                    <div class="date">
+                      Date
+                    </div>
+                    <div class="info">
+                      <p class="info_title">
+                        topic
+                      </p>
+                      <p class="info_com">
+                        topic involves?
+                      </p>
+                      <p class="info_cont">
+                        description
+                      </p>
+                    </div>
+                  </div>
+                </li> -->
+                <!-- <li>
+                  <div class="li_wrap">
+                    <div class="date">
+                      2019
+                    </div>
+                    <div class="info">
+                      <p class="info_title">
+                        Music Exhibition
+                      </p>
+                      <p class="info_com">
+                        Modern Indian School
+                      </p>
+                      <p class="info_cont">
+                        Organized the function as the incharge of music department.
+                      </p>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
