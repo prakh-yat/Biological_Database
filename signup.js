@@ -100,12 +100,12 @@ function validateForm(){
   }
   function validatePassword(pw1){
     if(pw1.value.length==0){
-      alert("Password cannot be empty!!")
+      alert("Password field cannot be empty!!")
       pw1.focus();
       return false;
     }
     if(pw1.value.length<8 || pw1.value.length>15){
-      alert("Password should be of length 8-15!")
+      alert("Password should be of length more than 12")
       pw1.focus();
       return false;
     }
